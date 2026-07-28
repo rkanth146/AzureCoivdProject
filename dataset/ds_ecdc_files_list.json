@@ -1,0 +1,20 @@
+{
+	"name": "ds_ecdc_files_list",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ablob_ramakanthsa",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "githubusercontent_ecdc_file_list.json",
+				"container": "configs"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
