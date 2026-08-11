@@ -68,7 +68,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "bronze",
-							"folder": "Dimuser",
+							"folder": {
+								"value": "@pipeline().parameters.TableName",
+								"type": "Expression"
+							},
 							"Tablename": {
 								"value": "@concat(pipeline().parameters.TableName,'_',utcNow())",
 								"type": "Expression"
